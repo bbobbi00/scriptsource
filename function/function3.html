@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="info()" class="btn btn-primary">정보 입력</button>
+    <script></script>
+    <script>
+      // function emailCheck(){
+      //     //이메일을 입력받아 @ 기호가 포함되었는지 확인
+      //     let email = prompt("이메일");
+      //     //@ 포함되었다면 이메일 화면 출력
+
+      //     //  미포함시 다시 이메일 입력받기
+      //     if(email.indexOf("0") ==-1)emailCheck();
+      //     else document.write(email, "<br>");
+
+      // }
+      // emailCheck();
+
+      //재귀호출
+      const recu = function f(num) {
+        if (num === 0) {
+          console.log(num);
+        } else {
+          console.log(num);
+          f(num - 1); // 함수 내부에서 호출
+        }
+      };
+      recu(5);
+    </script>
+  </body>
+</html>
